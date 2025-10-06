@@ -1,0 +1,42 @@
+<button id="changeContentBtn">Đổi nội dung</button>
+<p id="content">Nội dung ban đầu</p>
+<Style>
+    /* Đặt font chung */
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  margin-top: 50px;
+}
+
+/* Style cho nút */
+#changeContentBtn {
+  background-color: #4CAF50; /* xanh lá */
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  font-size: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#changeContentBtn:hover {
+  background-color: #45a049; /* đậm hơn khi hover */
+}
+
+/* Style cho đoạn văn */
+#content {
+  margin-top: 20px;
+  font-size: 18px;
+  color: #333;
+}
+
+</Style>
+<script>
+    const btn = document.getElementById("changeContentBtn");
+const content = document.getElementById("content");
+
+btn.addEventListener("click", () => {
+  content.textContent = "Chào bạn đến với JavaScript DOM";
+});
+</script>

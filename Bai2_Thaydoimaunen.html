@@ -1,0 +1,31 @@
+<div id="box" style="width: 100px; height: 100px; background-color: gray;"></div>
+
+<button id="redBtn">Đỏ</button>
+<button id="greenBtn">Xanh</button>
+<button id="yellowBtn">Vàng</button>
+
+<style>
+    #box {
+  width: 100px;
+  height: 100px;
+  background-color: gray; /* Màu nền mặc định */
+}
+</style>
+<script>
+    const box = document.getElementById("box");
+const redBtn = document.getElementById("redBtn");
+const greenBtn = document.getElementById("greenBtn");
+const yellowBtn = document.getElementById("yellowBtn");
+
+redBtn.addEventListener("click", () => {
+  box.style.backgroundColor = "red";
+});
+
+greenBtn.addEventListener("click", () => {
+  box.style.backgroundColor = "green";
+});
+
+yellowBtn.addEventListener("click", () => {
+  box.style.backgroundColor = "yellow";
+});
+</script>

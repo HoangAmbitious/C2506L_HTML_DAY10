@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <title>Bài 5 - Lấy giá trị từ input</title>
+  <style>
+    body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  margin-top: 50px;
+}
+
+input {
+  padding: 8px;
+  font-size: 16px;
+}
+
+button {
+  padding: 8px 16px;
+  font-size: 16px;
+  margin-left: 5px;
+  cursor: pointer;
+}
+</style>
+</head>
+<body>
+  <h2>Nhập tên của bạn</h2>
+  <input type="text" id="name" placeholder="Nhập tên...">
+  <button onclick="sayHello()">Chào</button>
+
+  <script>
+    function sayHello() {
+  const name = document.getElementById("name").value;
+  alert("Xin chào, " + name);
+}
+
+  </script>
+</body>
+</html>

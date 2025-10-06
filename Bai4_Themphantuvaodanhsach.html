@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bài 4 - Thêm phần tử vào danh sách</title>
+  <style>
+    body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  margin-top: 50px;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  font-size: 18px;
+  margin: 5px 0;
+  padding: 5px 10px;
+  background: #f1f1f1;
+  border-radius: 5px;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  margin-top: 10px;
+  background-color: #3498db;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #2980b9;
+}
+</style>
+</head>
+<body>
+  <h2>Bài 4 - Thêm phần tử vào danh sách</h2>
+
+  <ul id="danhsach">
+    <li>Item 1</li>
+    <li>Item 2</li>
+  </ul>
+
+  <button onclick="themItem()">Thêm</button>
+
+  <script>
+    function themItem() {
+  // Tạo 1 thẻ li mới
+  let li = document.createElement("li");
+  li.textContent = "Item mới";
+
+  // Thêm vào danh sách
+  document.getElementById("danhsach").appendChild(li);
+}
+  </script>
+</body>
+</html>

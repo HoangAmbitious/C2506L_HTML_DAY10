@@ -4,7 +4,38 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Bài 3 - Ẩn/Hiện phần tử</title>
-  <link rel="stylesheet" href="Bai3_hidden_show_phantu.css">
+  <style>
+    body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  margin-top: 50px;
+}
+
+p {
+  font-size: 18px;
+  color: #333;
+  margin: 20px 0;
+}
+
+button {
+  padding: 10px 20px;
+  margin: 5px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:first-of-type {
+  background-color: #e74c3c;
+  color: white;
+}
+
+button:last-of-type {
+  background-color: #2ecc71;
+  color: white;
+}
+</style>
 </head>
 <body>
   <h2>Bài 3 - Ẩn/Hiện phần tử</h2>
@@ -21,6 +52,14 @@
   <button onclick="anVan()">Ẩn</button>
   <button onclick="hienVan()">Hiện</button>
 
-  <script src="Bai3_hidden_show_phantu.js"></script>
+  <script>
+    function anVan() {
+  document.getElementById("doanvan").style.display = "none";
+}
+
+function hienVan() {
+  document.getElementById("doanvan").style.display = "block";
+}
+  </script>
 </body>
 </html>
